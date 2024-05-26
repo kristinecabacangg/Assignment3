@@ -21,3 +21,8 @@ loaded_arraywhen = load_data['file2']
 
 print(loaded_arraywhat)
 print(loaded_arraywhen)
+
+example#3
+import numpy as np
+data = np.load('whywhywhy.npy')
+print('Loaded Array:', data)
