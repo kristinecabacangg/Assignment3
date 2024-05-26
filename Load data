@@ -1,0 +1,23 @@
+example#1
+import numpy as np
+
+bozx = np.load('file2.npz')
+array1 = bozx['file1']
+array2 = bozx['file2']
+print(array1)
+print(array2)
+
+example#2
+import numpy as np
+
+arraywhat = np.array([2, 6, 10])
+arraywhen = np.array([4, 8, 12])
+
+np.savez('file2.npz', file1=arraywhat, file2=arraywhen)
+
+load_data = np.load('file2.npz')
+loaded_arraywhat = load_data['file1']
+loaded_arraywhen = load_data['file2']
+
+print(loaded_arraywhat)
+print(loaded_arraywhen)
