@@ -1,0 +1,29 @@
+example #1
+import numpy as np
+
+my_array = np.array([[2, 4, 6], [10, 5, 1], [3, 9, 15]])
+
+np.savetxt('my_array.csv', my_array, delimiter=',')
+
+example #2
+import numpy as np
+
+what = np.array([7, 8, 9])
+where = np.array([10, 11, 12])
+
+np.savez_compressed('arrays.npz', what=what, where=where)
+
+print("Arrays saved as arrays.npz")
+
+example#3
+import numpy as np
+
+mymymy = np.arange(1, 11)
+np.save('mymymy.npy', mymymy)
+loaded_numbers = np.load('mymymy.npy')
+
+print("Original array of numbers:")
+print(mymymy)
+
+print("\nLoaded array from file:")
+print(loaded_numbers)
